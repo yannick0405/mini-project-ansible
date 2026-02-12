@@ -45,7 +45,6 @@ Puis :
 
 `sur ton navigateur tu peux tout simplement saisir l´adresse IP de ton client Ansible  http://192.168.99.22:80 (remplacer ceci par l´adresse IP de ta machine cliente)  et tu veras cette page d´accueil que voici :` 
 
-(Remplace par l’IP de ton client si différente.)
 
 ![Image](ansible_partie1.png)
 # ✅ Exécution Partie 2
