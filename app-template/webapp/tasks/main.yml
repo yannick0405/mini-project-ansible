@@ -1,0 +1,20 @@
+---
+- name: Create docker network
+  community.docker.docker_network:
+    name: "{{ docker_network_name | default('custom_net') }}"
+    state: present
+
+- name: Pull webapp image
+  community.docker.docker_image:
+    name: "{{ webapp_image }}"
+    source: pull
+
+- name: Run webapp container
+  community.docker.docker_container:
+    name: "{{ container_name | default('webapp') }}"
+    image: "{{ webapp_image }}"
+    state: started
+    restart_policy: unless-stopped
+    networks:
+      - name: "{{ docker_network_name | default('custom_net') }}"
+
