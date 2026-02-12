@@ -47,7 +47,7 @@ Puis :
 
 (Remplace par l’IP de ton client si différente.)
 
-
+![Image](ansible_partie1.png)
 # ✅ Exécution Partie 2
 
 ## 1️⃣ Aller dans le dossier
@@ -77,4 +77,4 @@ Sinon tu auras l’erreur :
 # ✅ Vérification après déploiement
 
 `curl -I http://192.168.99.22`
-
+![Image](ansible_partie2.png)
