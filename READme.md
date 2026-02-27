@@ -12,12 +12,6 @@ Puis :
 
 `ansible-playbook -i hosts nginx_playbook.yaml` 
 
-----------
-
-
-
-----------
-
 ## ✅ Vérification après déploiement
 
 `sur ton navigateur tu peux tout simplement saisir l´adresse IP de ton client Ansible  http://192.168.99.22:80 (remplacer ceci par l´adresse IP de ta machine cliente)  et tu veras cette page d´accueil que voici :` 
@@ -28,9 +22,7 @@ Puis :
 
 ## 1️⃣ Aller dans le dossier
 
-`cd mini-projet-ansible/app-template` 
-
-----------
+`cd mini-projet-ansible/app-template`
 
 ## 2️⃣ Lancer le playbook
 
