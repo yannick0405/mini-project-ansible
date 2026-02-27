@@ -14,6 +14,8 @@
     name: "{{ container_name | default('webapp') }}"
     image: "{{ webapp_image }}"
     state: started
+    published_ports:
+       - "8082:80"
     restart_policy: unless-stopped
     networks:
       - name: "{{ docker_network_name | default('custom_net') }}"
